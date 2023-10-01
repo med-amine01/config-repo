@@ -12,8 +12,8 @@ microservices:
   product-service:
     endpoints:
       endpoint:
-        uri: 'http://localhost:8765/product-service/api/v1/products'
+        uri: 'http://product-service/api/v1/products'
   coupon-service:
     endpoints:
       endpoint:
-        uri: 'http://localhost:8765/coupon-service/api/v1/coupons'
+        uri: 'http://coupon-service/api/v1/coupons'
