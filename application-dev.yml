@@ -1,3 +1,14 @@
+spring:
+  # Database config
+  datasource:
+    url: ${dev.database.url}
+    username: ${dev.database.username}
+    password: ${dev.database.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
 eureka:
   client:
     register-with-eureka: true
