@@ -8,9 +8,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  # Config server
-  config:
-    import: configserver:${dev.configserver.url}
 
 eureka:
   client:
