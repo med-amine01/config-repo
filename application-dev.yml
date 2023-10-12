@@ -23,4 +23,4 @@ microservices:
   coupon-service:
     endpoints:
       endpoint:
-        uri: ${dev.coupon.uri}
+        uri: ${dev.api-gateway}/coupon-service/api/v1/coupons
