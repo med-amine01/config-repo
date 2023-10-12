@@ -15,12 +15,12 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-  # instance:
-  #   instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
-  #   prefer-ip-address: true
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+    prefer-ip-address: true
 
 microservices:
   coupon-service:
     endpoints:
       endpoint:
-        uri: ${dev.api-gateway}/coupon-service/api/v1/coupons
+        uri: http://coupon-service:9091/api/v1/coupons
