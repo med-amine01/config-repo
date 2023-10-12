@@ -18,3 +18,9 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
     prefer-ip-address: true
+
+microservices:
+  coupon-service:
+    endpoints:
+      endpoint:
+        uri: ${dev.coupon.uri}
