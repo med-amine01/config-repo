@@ -24,7 +24,7 @@ microservices:
     endpoints:
       endpoint:
         uri: http://coupon-service/api/v1/coupons
-  inventory-service:
-    endpoints:
-      endpoint:
-        uri: http://inventory-service/api/v1/inventories
+  # inventory-service:
+  #   endpoints:
+  #     endpoint:
+  #       uri: http://inventory-service/api/v1/inventories
