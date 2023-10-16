@@ -18,11 +18,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
     prefer-ip-address: true
-
-rabbitmq:
-  queue: ${broker.product.queue}
-  exchange: ${broker.product.exchange}
-  routing-key: ${broker.product.routing-key}
   
 
 coupon-service:
