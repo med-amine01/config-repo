@@ -8,10 +8,6 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
-        globally_quoted_identifiers: true
 
 eureka:
   client:
