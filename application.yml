@@ -12,6 +12,8 @@ microservices:
   coupon-service:
     uri: http://coupon-service/api/v1/coupons
   product-service:
-    uri: http://coupon-service/api/v1/products
+    uri: http://product-service/api/v1/products
   inventory-service:
     uri: http://inventory-service/api/v1/inventories
+  order-service:
+    uri: http://order-service/api/v1/orders
