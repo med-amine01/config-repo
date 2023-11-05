@@ -4,16 +4,6 @@ spring:
   profiles:
     active: dev
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://discovery-server:8761/eureka
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
-    prefer-ip-address: true
-
 microservices:
   coupon-service:
     uri: http://coupon-service/api/v1/coupons

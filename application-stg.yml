@@ -1,0 +1,20 @@
+spring:
+  # Database config
+  datasource:
+    url: ${stg.database.url}
+    username: ${stg.database.username}
+    password: ${stg.database.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+    prefer-ip-address: true
