@@ -9,6 +9,7 @@ spring:
       ddl-auto: create-drop
     show-sql: true
 
+# Discovery client
 eureka:
   client:
     register-with-eureka: true
