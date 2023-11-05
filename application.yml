@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: ${service-name}
-  profiles:
-    active: dev
-
 microservices:
   coupon-service:
     uri: http://coupon-service/api/v1/coupons
