@@ -7,7 +7,7 @@ microservices:
     uri: http://inventory-service/api/v1/inventories
   order-service:
     uri: http://order-service/api/v1/orders
-  identity-service:
-    - auth-uri: http://identity-service/api/v1/auth
-    - user-uri: http://identity-service/api/v1/users
-    - role-uri: http://identity-service/api/v1/roles
+  # identity-service:
+  #   auth-uri: http://identity-service/api/v1/auth
+  #   # - user-uri: http://identity-service/api/v1/users
+  #   # - role-uri: http://identity-service/api/v1/roles
