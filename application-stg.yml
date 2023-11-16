@@ -2,8 +2,8 @@ spring:
   # Database config
   datasource:
     url: ${stg.database.url}
-    username: ${stg.database.username}
-    password: ${stg.database.password}
+    username: ${database.username}
+    password: ${database.password}
   jpa:
     hibernate:
       ddl-auto: update
