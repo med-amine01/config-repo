@@ -2,7 +2,7 @@ spring:
   # Database config
   datasource:
     url: ${stg.database.url}
-    username: ${database.username}
+    username: ${stg.database.username}
     password: ${database.password}
   jpa:
     hibernate:
